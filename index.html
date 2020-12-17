@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="img-container">
+            <img src="img/3peg.jpg" alt="">
+        </div>
+            <div class="song-info">
+                <h2 id="title">3 Peg</h2>
+                <h3 id="artist">Sharry Mann</h3>
+            </div>
+            <audio src="music/3peg.mp3" id="audio-file"></audio>
+             <!--Progress-->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress">
+                    <div class="end-point"></div> 
+                </div>
+                    <div class="duration-wrapper">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">3:26</span>
+                    </div>       
+            </div>
+
+            <!--Controls-->
+            <div class="player-controls">
+                <i class="fas fa-backward" id="prev"></i>
+                <i class="fas fa-play-circle main-button" id="play"></i>
+                <i class="fas fa-forward" id="next"></i>
+            </div>
+    </div>
+</body>
+</html>
